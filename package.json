@@ -2,9 +2,11 @@
   "name": "nuxt-gh-pages",
   "version": "1.0.0",
   "description": "My majestic Nuxt.js project",
+  "homepage": "https://georgpreissl.github.io/nuxt-gh-pages/",
   "author": "Georg Preissl",
   "private": true,
   "scripts": {
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",    
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -14,5 +16,8 @@
     "nuxt": "^2.0.0",
     "@nuxtjs/axios": "^5.3.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "push-dir": "^0.4.1"
+  }
 }
